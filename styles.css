@@ -1029,7 +1029,11 @@ a {
 }
 
  /* Therapy Access */
-
+@media (min-width: 768px) and (max-width: 777px){
+  .img2 .img-caption{
+    padding: 0;
+  }
+}
 
 
      /* ====== TABLET & SMALL LAPTOPS ====== */
@@ -3494,9 +3498,9 @@ a {
              /* ensure visible height for absolutely positioned slides */
          }
 
-         .quote-card {
+         /* .quote-card {
              padding: 1rem;
-         }
+         } */
 
          .patient-quote {
              font-size: 1.1rem;
@@ -3900,6 +3904,32 @@ a {
     
 }
 
+
+@media (min-width: 986px) and (max-width: 1024px){
+  .newsletter-content p {
+        /* font-size: 15px;
+        margin-bottom: 3px; */
+        max-width: 700px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .newsletter-content {
+        padding: 32px;
+    }}
+
+@media (min-width: 790px) and (max-width: 800px){
+  .newsletter-content p {
+        font-size: 15px;
+        margin-bottom: 3px;
+        max-width: 500px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .newsletter-content {
+        padding: 32px;
+    }}
 /* ——— 768px ——— */
 @media (max-width: 800px) {
     .footer-main-content {
@@ -4110,10 +4140,13 @@ button:hover,
 .help-btn:hover,
 .clinic-btn:hover,
 .blog-btn:hover,
-.card-btn:hover,
-.care-btn:hover,
-.learn-btn:hover {
+/* .card-btn:hover, */
+.care-btn:hover{
   background: #134a8e;
+}
+
+.card-btn:hover{
+  background: #3d3e3f;
 }
 
 button img,
@@ -4122,7 +4155,7 @@ button img,
 .blog-btn img,
 .card-btn img,
 .care-btn img,
-.learn-btn img {
+.learn-btn svg {
     transition: transform 0.4s ease;
 }
 
@@ -4131,7 +4164,7 @@ button img,
 .blog-btn:hover img,
 .card-btn:hover img,
 .care-btn:hover img,
-.learn-btn:hover img {
+.learn-btn:hover svg {
       transform: rotate(45deg);
 }
 
