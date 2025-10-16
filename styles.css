@@ -121,6 +121,7 @@ a {
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
 }
 
 .contact-left{
@@ -697,6 +698,7 @@ a {
     border-radius: 16px;
     transition: all 0.3s ease;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 79.73%, rgba(0, 0, 0, 0.8) 100%);
+    object-fit: cover;
 }
 
 /* Add bottom gradient overlay to image boxes without affecting layout */
@@ -1205,7 +1207,7 @@ a {
 
      /* (max-width: 1200px) */
      /* Hero */
-     @media (max-width: 1200px) {
+     @media (max-width: 1265px) {
          .main-container {
              flex-direction: column;
              align-items: center;
@@ -1288,8 +1290,18 @@ a {
              /* restore tablet size */
              height: 45px;
              font-size: 14px;
-             padding: 8px 12px;
+             padding: 15px 6px;
          }
+         .img2 .img-caption {
+             width: 65%;
+          }
+     }
+
+     @media (min-width: 730px) and (max-width: 830px){
+               .img2 .img-caption {
+          padding-top: 15px;
+             width: 68%;
+          }
      }
 
      /* (max-width: 768px) */
@@ -3245,7 +3257,7 @@ a {
 }
 
 .nav-arrow:hover {
-    background-color: #1a73e8;
+    background-color: #134a8e;
     color: white;
 
 }
@@ -3296,41 +3308,96 @@ a {
 /* Dynamic Content Transitions */
 
 /* Common class for elements that slide and fade */
+/* === SLIDE ANIMATION FOR QUOTE CONTENT === */
 .slide-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.6s ease;
 }
 
 .slide-content.active-quote {
-    position: relative;
-    /* Bring active quote back to flow */
-    opacity: 1;
-    transform: translateX(0);
-    z-index: 10;
-}
-
-/* Transition states for quote text */
-.slide-enter-right {
-    transform: translateX(100%);
+  position: relative;
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 10;
 }
 
 .slide-enter-left {
-    transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .slide-leave-right {
-    transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+
+/* Transition states for quote text with animation */
+.slide-enter-right {
+  animation: slideInRight 0.6s ease-in-out forwards;
+}
+
+.slide-enter-left {
+  animation: slideInLeft 0.6s ease-in-out forwards;
+}
+
+.slide-leave-right {
+  animation: slideOutRight 0.6s ease-in-out forwards;
 }
 
 .slide-leave-left {
-    transform: translateX(-100%);
+  animation: slideOutLeft 0.6s ease-in-out forwards;
 }
+
+/* Keyframes for sliding animations */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
 
 /* Transition state for images (just fade and slight scale/movement) */
 .image-transition-container {
@@ -3340,21 +3407,30 @@ a {
 }
 
 .slide-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transform: scale(0.98);
-    transition: all 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.6s ease;
 }
 
 .slide-image.active-image {
-    opacity: 1;
-    transform: scale(1);
-    z-index: 1;
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 1;
 }
+
+.slide-enter-left .slide-image {
+  transform: translateX(-100%);
+}
+
+.slide-leave-right .slide-image {
+  transform: translateX(100%);
+}
+
 
 .slide-image.active-info {
     z-index: 10;
@@ -3456,6 +3532,7 @@ a {
              justify-content: flex-start;
              height: auto;
              margin: 0;
+             padding:  1.5rem 5.2rem;
              /* start at top, grow with content */
          }
 
@@ -3657,9 +3734,9 @@ a {
     transition: background 0.3s ease;
 }
 
-.subscribe-form button:hover {
+/* .subscribe-form button:hover {
     background: #0f6adc;
-}
+} */
 
 .subscribe-form button img {
     width: 13px;
@@ -4023,4 +4100,41 @@ a {
         justify-content: center;
         gap: 12px;
     }
+}
+
+button , .help-btn , .clinic-btn , .nav-btn , .blog-btn , .card-btn , .care-btn , .learn-btn{
+  transition: background 0.3s ease;
+}
+
+button:hover,
+.help-btn:hover,
+.clinic-btn:hover,
+.blog-btn:hover,
+.card-btn:hover,
+.care-btn:hover,
+.learn-btn:hover {
+  background: #134a8e;
+}
+
+button img,
+.help-btn img,
+.clinic-btn img,
+.blog-btn img,
+.card-btn img,
+.care-btn img,
+.learn-btn img {
+    transition: transform 0.4s ease;
+}
+
+.help-btn:hover img,
+.clinic-btn:hover img,
+.blog-btn:hover img,
+.card-btn:hover img,
+.care-btn:hover img,
+.learn-btn:hover img {
+      transform: rotate(45deg);
+}
+
+ button:hover img {
+    transform: rotate(45deg);
 }
