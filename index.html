@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma 4</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/sora-3" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===== HEADER SECTION ===== -->
+    <header class="navbar">
+        <!-- === TOP BAR === -->
+        <div class="nav-top">
+            <div class="nav-container">
+                <div class="navbar-top">
+                    <div class="top-left">
+                        <!-- 4 social/media icons -->
+                        <img src="./assets/facebook.svg" alt="icon1" />
+                        <img src="./assets/insta.svg" alt="icon2" />
+                        <img src="./assets/linkedIn.svg" alt="icon3" />
+                        <img src="./assets/twitter.svg" alt="icon4" />
+                    </div>
+
+                    <div class="top-right">
+                        <div class="contact-left">
+                            <img src="./assets/mail.svg" alt="Email" />
+                            <span>info@sydneyspeechclinic.com.au</span>
+                        </div>
+                        <div class="contact-right">
+                            <img src="./assets/call.svg" alt="Phone" />
+                            <span>Phone: 02 8404 0715</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-container">
+            <!-- === MAIN NAVBAR === -->
+            <div class="navbar-bottom">
+                <div class="logo">
+                    <img src="./assets/logo1.svg" alt="Logo" />
+                </div>
+
+                <nav class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Group Therapy Programs</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">General Content</a>
+                    <a href="#">Our Articles</a>
+                    <a href="#">Contact Us</a>
+                </nav>
+
+                <div class="nav-btn">
+                    <button>
+                        <span>Make an Enquiry</span>
+                        <img src="./assets/arrow_outward.svg" alt="Arrow" />
+                    </button>
+                </div>
+
+                <!-- Hamburger menu button (hidden on desktop) -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Mobile menu (hidden on desktop, toggles on mobile) -->
+                <div class="mobile-menu">
+                    <!-- <div class="mobile-logo">
+                        <img src="./assets/logo.svg" alt="Logo" />
+                    </div> -->
+                    <div class="mobile-nav-links">
+                        <a href="#">Home</a>
+                        <a href="#">Group Therapy Programs</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">General Content</a>
+                        <a href="#">Our Articles</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="mobile-nav-btn">
+                        <button>
+                            <span>Make an Enquiry</span>
+                            <img src="./assets/arrow_outward.svg" alt="Arrow" />
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-blob hero-top-left-blob"></div>
+        <div class="hero-blob hero-bottom-right-blob"></div>
+        <div class="hero-container">
+          <div class="main-container">
+            <!-- Top Left Images -->
+            <div class="image-grid">
+              <div class="image-box img1">
+                <img
+                  src="assets/left-image.jpg"
+                  alt="Speech Therapy And Occupational Therapy Clinic"
+                />
+                <div class="img-caption">
+                  Speech Therapy And Occupational Therapy Clinic
+                </div>
+              </div>
+
+              <div class="image-box img2">
+                <img
+                  src="assets/middle-image.jpg"
+                  alt="Building Confidence In Communication"
+                />
+                <div class="img-caption">
+                  Building Confidence In Communication
+                </div>
+              </div>
+            </div>
+
+            <!-- Inverted L Tall Image -->
+            <div class="tall-image">
+              <img src="assets/right1-image.png" alt="Therapy Session" />
+            </div>
+
+            <!-- Blue Text Box -->
+            <div class="text-box">
+              <h2>
+                Comprehensive <span>Speech <br>and Occupational</span> Therapy for
+                All Ages
+              </h2>
+              <p>
+                At our allied health clinic, we are dedicated to improving the
+                health and well-being of children and adults with a wide range
+                of professional services.
+              </p>
+              <button class="enquiry-btn dta-button">
+                Make An Enquiry
+                <img src="assets/arrow_outward.svg" alt="arrow" />
+              </button>
+            </div>
+
+            <!-- Blob Placeholders -->
+            <div class="blob blob-top-left"></div>
+            <div class="blob blob-bottom-right"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="therapy-access-section">
+      <div class="therapy-access-background">
+        <h2 class="therapy-access-title">
+          Access Professional Therapy From Anywhere
+        </h2>
+        <p class="therapy-access-subtitle">
+          Convenient and Secure Online Therapy Sessions
+        </p>
+        <div class="therapy-access-buttons">
+          <a href="#" class="therapy-access-btn therapy-btn-primary">
+            <span>Email Us</span>
+            <img src="assets/arrow_outward_blue.svg" alt="arrow" />
+          </a>
+          <a href="#" class="therapy-access-btn therapy-btn-outline">
+            <span>Call Us</span>
+            <img src="assets/arrow_outward.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+<section class="clinic-section">
+    <div class="clinic-wrapper">
+
+      <!-- LEFT SIDE -->
+      <div class="clinic-left">
+        <!-- Top Content -->
+        <div class="clinic-top">
+          <div class="clinic-intro">
+            <p class="intro-text">Welcome to Our Clinic</p>
+            <h4 class="clinic-heading">Speech And Occupational Therapy For All Ages</h4>
+          </div>
+
+          <div class="clinic-divider"></div>
+
+          <div class="clinic-desc">
+            <p>
+              Providing comprehensive speech and occupational therapy services for individuals of all ages,
+              helping them achieve their full potential.
+            </p>
+
+            <a href="#" class="enquiry-btn clinic-btn">
+              Make An Enquiry
+              <img src="./assets/arrow_outward.svg" alt="Arrow" />
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom Image -->
+        <div class="clinic-image">
+          <img src="./assets/clinic-left.jpg" alt="Clinic Team" />
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="clinic-right">
+        <div class="clinic-right-image">
+          <img src="./assets/clinic-right.png" alt="Therapist with Patient" />
+        </div>
+
+        <div class="clinic-stats">
+          <div class="stat-item">
+            <h3>5,000</h3>
+            <p>Recovered Patients</p>
+          </div>
+
+          <div class="stat-item">
+            <h3>98%</h3>
+            <p>Satisfaction Rate</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<section class="help-section">
+  <div class="help-wrapper">
+    <!-- ===== TOP SECTION ===== -->
+    <div class="help-top">
+      <div class="help-top-left">
+        <h2>How We Help</h2>
+        <p>Discover Our Comprehensive Support Services</p>
+      </div>
+      <div class="help-top-right">
+        <a href="#" class="help-btn">
+          View More
+          <img src="./assets/arrow_outward.svg" alt="">
+</a>
+
+      </div>
+    </div>
+
+    <!-- ===== GRID SECTION ===== -->
+    <div class="help-grid">
+      <!-- CARD 1 -->
+      <div class="help-card">
+        <img src="./assets/speech.svg" alt="Speech Therapy">
+        <h3>Speech</h3>
+        <p>
+          Children with speech difficulties may be experiencing delays/
+          disorders of articulation and phonology, childhood apraxia of speech
+          (CAS) or stuttering. If your child is difficult t...
+        </p>
+        <a href="#" class="learn-btn">
+  Learn More
+  <svg
+    width="13"
+    height="13"
+    viewBox="0 0 13 13"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z"
+      fill="#27A9E1"
+    />
+  </svg>
+</a>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="help-card">
+        <img src="./assets/language.svg" alt="Occupational Therapy">
+        <h3>Language</h3>
+        <p>
+          Language difficulties may encompass delayed receptive and expressive language skills, late talkers, delayed development of play skills, reduced attention span, specific language i...
+        </p>
+        <a href="#" class="learn-btn">
+  Learn More
+  <svg
+    width="13"
+    height="13"
+    viewBox="0 0 13 13"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z"
+      fill="#27A9E1"
+    />
+  </svg>
+</a>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="help-card">
+        <img src="./assets/literacy.svg" alt="Behavior Therapy">
+        <h3>Literacy</h3>
+        <p>
+          Literacy is language based and successfully learning to read and spell involves five 'key' skill areas; phonemic awareness (the ability to identify and manipulate the sounds in words...
+        </p>
+        <a href="#" class="learn-btn">
+  Learn More
+  <svg
+    width="13"
+    height="13"
+    viewBox="0 0 13 13"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z"
+      fill="#27A9E1"
+    />
+  </svg>
+</a>
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="help-card">
+        <img src="./assets/gross.svg" alt="Physical Therapy">
+        <h3>Gross motor</h3>
+        <p>
+          Gross motor skills are those which require whole body movement and which involve the large muscles of the body. These whole body movements rely on having a strong and stabl..
+        </p>
+        <a href="#" class="learn-btn">
+  Learn More
+  <svg
+    width="13"
+    height="13"
+    viewBox="0 0 13 13"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z"
+      fill="#27A9E1"
+    />
+  </svg>
+</a>
+
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="help-card">
+        <img src="./assets/handwriting.svg" alt="Handwriting">
+        <h3>Handwriting</h3>
+        <p>
+          Early handwriting skills are fundamental skills children need to develop before they are able to write. These skills contribute to the child’s ability to hold and use a pencil, and the ablit...
+        </p>
+        <a href="#" class="learn-btn">
+  Learn More
+  <svg
+    width="13"
+    height="13"
+    viewBox="0 0 13 13"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z"
+      fill="#27A9E1"
+    />
+  </svg>
+</a>
+
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="help-card">
+        <img src="./assets/cognition.svg" alt="Parent Counseling">
+        <h3>Cognition</h3>
+        <p>
+         Cognitive development means how children think, explore and figure things out. It is the development of knowledge, skills, problem solving and dispositions, which help childre...
+        </p>
+        <a href="#" class="learn-btn">
+  Learn More
+  <svg
+    width="13"
+    height="13"
+    viewBox="0 0 13 13"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.4 13L0 11.6L9.6 2H1V0H13V12H11V3.4L1.4 13Z"
+      fill="#27A9E1"
+    />
+  </svg>
+</a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="care-section">
+  <div class="care-wrapper">
+    <div class="care-content">
+      <!-- === LEFT IMAGE SIDE === -->
+      <div class="care-left">
+        <div class="care-image">
+          <img src="./assets/care.jpg" alt="Care Image" />
+
+          <!-- Floating card -->
+          
+        </div>
+        <div class="care-floating">
+            <h3>5K+ Patients</h3>
+            <div class="review-box">
+              <img src="./assets/star.svg" alt="Star" />
+              <p>5.0 (200 Reviews)</p>
+            </div>
+            <img src="./assets/review-bar.svg" alt="Review Bar" class="review-bar" />
+          </div>
+      </div>
+
+      <!-- === RIGHT CONTENT SIDE === -->
+      <div class="care-right">
+        <div class="care-text-top">
+          <h2>Discover the Difference of Our Comprehensive Care</h2>
+          <p>
+            Receive personalized care for the whole family at our health clinic. Our dedicated team provides
+            comprehensive services for children and adults, focusing on quality and compassion to ensure the
+            highest level of care for every patient.
+          </p>
+        </div>
+
+        <div class="care-features">
+          <div class="feature-item">
+            <img src="./assets/tick.svg" alt="Check" />
+            <p>Personalized Treatment Plans</p>
+          </div>
+          <div class="feature-item">
+            <img src="./assets/tick.svg" alt="Check" />
+            <p>Experienced and Caring Team</p>
+          </div>
+          <div class="feature-item">
+            <img src="./assets/tick.svg" alt="Check" />
+            <p>State-of-the-Art Facilities</p>
+          </div>
+        </div>
+
+        <a href="#" class="enquiry-btn care-btn">
+          Make An Enquiry
+          <img src="./assets/arrow_outward.svg" alt="Arrow" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog-section">
+  <div class="blog-wrapper">
+
+    <!-- Top Section -->
+    <div class="blog-top">
+      <div class="blog-top-left">
+        <h2>Explore Our Blog</h2>
+        <p>Stay informed with our latest blog posts.</p>
+      </div>
+      <div class="blog-top-right">
+        <a href="#" class="blog-btn">
+          View More
+          <img src="./assets/arrow_outward.svg" alt="arrow">
+        </a>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="blog-cards">
+      <!-- Active Card -->
+      <div class="blog-card active">
+        <img src="./assets/blog1.png" alt="Blog Image" class="card-bg">
+
+        <div class="card-top">
+          <div class="card-tags">
+            <span>VocabularyBuilding</span>
+            <span>SharedReading</span>
+            <span>ChildDevelopment</span>
+            <span>LanguageSkills</span>
+            <span>EarlyLiteracy</span>
+          </div>
+          <div class="card-icon">
+            <div class="inner-icon icon-top">
+              <img src="./assets/arrow_outward_blue.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+
+        <div class="card-bottom">
+          <div class="card-text">
+            <h3>Building Vocabulary During Shared Book Reading</h3>
+            <p>
+              Research shows that reading with children from a young age greatly impacts their
+              long-term vocabulary development (Mol & Bus, 2011). It is also a great time to bond
+              with your child no matter what age!
+            </p>
+          </div>
+          <div class="card-btn">
+            <span>Explore More</span>
+            <img src="./assets/arrow_outward.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="card-icon top-right">
+          <div class="inner-icon">
+            <img src="./assets/arrow_outward_blue.svg" alt="arrow">
+          </div>
+        </div>
+      </div>
+
+      <!-- Inactive Cards -->
+      <div class="blog-card small">
+        <img src="./assets/blog2.jpg" alt="Blog Image" class="card-bg">
+        <div class="card-top">
+          <div class="card-tags">
+            <span>VocabularyBuilding</span>
+            <span>SharedReading</span>
+            <span>ChildDevelopment</span>
+            <span>LanguageSkills</span>
+            <span>EarlyLiteracy</span>
+          </div>
+          <div class="card-icon">
+            <div class="inner-icon icon-top">
+              <img src="./assets/arrow_outward_blue.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+
+        <div class="card-bottom">
+          <div class="card-text">
+            <h3>Building Vocabulary During Shared Book Reading</h3>
+            <p>
+              Research shows that reading with children from a young age greatly impacts their
+              long-term vocabulary development (Mol & Bus, 2011). It is also a great time to bond
+              with your child no matter what age!
+            </p>
+          </div>
+          <div class="card-btn">
+            <span>Explore More</span>
+            <img src="./assets/arrow_outward.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="card-icon top-right">
+          <div class="inner-icon">
+            <img src="./assets/arrow_outward_blue.svg" alt="arrow">
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card small">
+        <img src="./assets/blog3.jpg" alt="Blog Image" class="card-bg">
+        <div class="card-top">
+          <div class="card-tags">
+            <span>VocabularyBuilding</span>
+            <span>SharedReading</span>
+            <span>ChildDevelopment</span>
+            <span>LanguageSkills</span>
+            <span>EarlyLiteracy</span>
+          </div>
+          <div class="card-icon">
+            <div class="inner-icon icon-top">
+              <img src="./assets/arrow_outward_blue.svg" alt="arrow">
+            </div>
+          </div>
+        </div>
+
+        <div class="card-bottom">
+          <div class="card-text">
+            <h3>Building Vocabulary During Shared Book Reading</h3>
+            <p>
+              Research shows that reading with children from a young age greatly impacts their
+              long-term vocabulary development (Mol & Bus, 2011). It is also a great time to bond
+              with your child no matter what age!
+            </p>
+          </div>
+          <div class="card-btn">
+            <span>Explore More</span>
+            <img src="./assets/arrow_outward.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="card-icon top-right">
+          <div class="inner-icon">
+            <img src="./assets/arrow_outward_blue.svg" alt="arrow">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- testimonial section -->
+
+    <section class="testimonial-section">
+      <div class="testimonial-content-wrapper">
+        <div class="section-header">
+          <h2>What Our Patients Say About Us</h2>
+          <p>
+            Discover what our happy patients have to say about their
+            <br />experiences at Allied Health Clinic.
+          </p>
+        </div>
+
+        <div class="carousel-container">
+          <!-- Testimonial Image Card -->
+          <div class="testimonial-card image-card">
+            <div
+              class="image-transition-container"
+              id="image-transition-container"
+            >
+              <!-- Images will be dynamically inserted here -->
+            </div>
+          </div>
+
+          <!-- Testimonial Quote Card -->
+          <div class="testimonial-card quote-card">
+            <!-- NEW WRAPPER for Quote Text and Icons (Satisfies: text in a different container with border-radius) -->
+            <div class="quote-text-wrapper">
+              <span class="quote-icon quote-start desktop-quote"
+                ><img src="assets/up_quote.svg" alt="quote"
+              /></span>
+              <span class="quote-icon quote-start mobile-quote"
+                ><img src="assets/up_quote2.svg" alt="quote"
+              /></span>
+
+              <!-- This container holds the dynamically changing quote text -->
+              <div
+                class="quote-transition-container"
+                id="quote-transition-container"
+              >
+                <!-- Quotes will be dynamically inserted here -->
+              </div>
+              <span class="quote-icon quote-end desktop-quote"
+                ><img src="assets/down_quote.svg" alt="quote"
+              /></span>
+              <span class="quote-icon quote-end mobile-quote"
+                ><img src="assets/down_quote2.svg" alt="quote"
+              /></span>
+            </div>
+
+            <!-- Carousel Controls - Placed right below the quote-text-wrapper, but still inside the main quote-card -->
+            <div class="carousel-controls">
+              <div class="nav-arrow" id="prev-arrow">
+                <!-- Arrow Left Icon -->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19 12H5M12 5L5 12L12 19"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+
+              <div class="pagination-dots" id="pagination-dots">
+                <!-- Dots will be dynamically inserted here -->
+              </div>
+
+              <div class="nav-arrow" id="next-arrow">
+                <!-- Arrow Right Icon -->
+                <!-- <img src="assets/arrow_forward-white.svg" alt=""> -->
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 12H19M12 5L19 12L12 19"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!-- footer section -->
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Newsletter Section -->
+        <div class="newsletter-section">
+          <div class="newsletter-border">
+            <div class="newsletter-content newsletter-bg">
+              <h2>
+                Subscribe To Improve Your Health
+                <svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_319_6020)">
+                    <path d="M46.1062 16.7193L14.878 8.11031L14.8703 8.10823C13.6409 7.77515 12.3346 8.60892 11.9661 9.96896L6.95114 28.4794C6.58267 29.8394 7.2818 31.2165 8.51122 31.5496L28.6074 37.0437L30.8413 37.6572L39.7637 40.0992L39.7714 40.1013C41.0008 40.4344 42.3072 39.6006 42.6757 38.2406L47.6719 19.7993C48.0348 18.4295 47.3412 17.0621 46.1062 16.7193ZM42.0554 38.0643C41.7785 39.0862 40.8237 39.7183 39.9324 39.4768L31.0079 37.0425L28.774 36.429L8.68544 30.937C7.79412 30.6955 7.29666 29.67 7.57353 28.648L12.5864 10.1453C12.8633 9.12332 13.8104 8.48914 14.7094 8.73271L14.7171 8.73479L45.9397 17.334C46.8289 17.5832 47.3264 18.6087 47.0516 19.623L42.0554 38.0643Z" fill="white"/>
+                    <path d="M41.4721 19.5464L10.2439 10.9375C9.00677 10.6023 7.70041 11.4361 7.32986 12.8038L2.31491 31.3142C1.94643 32.6743 2.64556 34.0514 3.87498 34.3845L23.9712 39.8785L26.2051 40.492L35.1275 42.9341C36.3646 43.2692 37.6633 42.4334 38.0318 41.0733L43.028 22.632C43.3985 21.2643 42.6994 19.8872 41.4721 19.5464Z" fill="#134A8E"/>
+                    <path d="M41.4721 19.5464L10.2439 10.9375L10.2362 10.9354C8.997 10.6079 7.69833 11.4438 7.32986 12.8038L2.31491 31.3142C1.94643 32.6743 2.64556 34.0514 3.87498 34.3845L23.9712 39.8785L26.2051 40.492L35.1275 42.9341L35.1352 42.9361C36.3646 43.2692 37.671 42.4354 38.0394 41.0754L43.0357 22.6341C43.3985 21.2643 42.6994 19.8872 41.4721 19.5464ZM37.4212 40.8914C37.1443 41.9134 36.1895 42.5455 35.2982 42.304L26.3758 39.8619L24.1419 39.2484L4.04152 33.7698C3.15019 33.5283 2.65274 32.5027 2.92962 31.4808L7.94457 12.9703C8.22144 11.9484 9.17624 11.3163 10.0676 11.5578L10.0753 11.5599L41.3034 20.1688C42.1927 20.418 42.6901 21.4435 42.4153 22.4578L37.4212 40.8914Z" fill="white"/>
+                    <path d="M40.0743 24.1573L23.3424 27.1297C22.8704 27.1668 22.4017 27.0398 22.0151 26.7619L9.0699 15.7574C8.93704 15.6389 8.73389 15.6581 8.6231 15.793C8.50463 15.9259 8.52382 16.129 8.65876 16.2398L8.66645 16.2419L21.625 27.2583C21.6326 27.2604 21.6382 27.2701 21.6459 27.2722C22.1639 27.6435 22.7919 27.8219 23.4265 27.7628C23.4342 27.7649 23.444 27.7593 23.4516 27.7614L40.201 24.7854C40.3735 24.7579 40.4926 24.5922 40.465 24.4198C40.4222 24.2433 40.2565 24.1241 40.0743 24.1573C40.0841 24.1517 40.0764 24.1496 40.0743 24.1573Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_319_6020">
+                    <rect width="40.7597" height="40.7597" fill="white" transform="translate(10.6586 0.51709) rotate(15.159)"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+              </h2>
+              <p>
+                Join our newsletter for expert tips on enhancing your health and
+                well-being.
+              </p>
+              <form class="subscribe-form">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">
+                  Subscribe
+                  <img src="assets/footer-arrow_outward.svg" alt="arrow" />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="footer-main-content">
+          <!-- Column 1: Logo and Brand -->
+          <div class="footer-column logo-column">
+            <img src="assets/footer_logo.png" alt="Sydney Speech Clinic Logo" />
+          </div>
+
+          <!-- Social Icons for Mobile -->
+          <!-- <div class="social-icons-mobile">
+            <a href="#">
+              <img src="assets/footer-twitter.svg" alt="twiiter" />
+            </a>
+            <a href="#">
+              <img src="assets/footer-insta.svg" alt="insta" />
+            </a>
+            <a href="#">
+              <img src="assets/footer-fb.svg" alt="fb" />
+            </a>
+          </div> -->
+
+          <!-- Column 2: Quick Links -->
+          <div class="footer-column">
+            <h4>Quicks links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">How We Help</a></li>
+              <li><a href="#">Booking Process</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 3: Services -->
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Speech Therapy</a></li>
+              <li><a href="#">Occupational Therapy</a></li>
+              <li><a href="#">Pediatric Therapy</a></li>
+              <li><a href="#">Adult Therapy</a></li>
+              <li><a href="#">Teletherapy Services</a></li>
+              <li><a href="#">Group Therapy Programs</a></li>
+            </ul>
+          </div>
+
+          <!-- Column 4: Contact Us -->
+          <div class="footer-column contact-column">
+            <h4>Contact Us</h4>
+            <ul class="contact-list">
+              <li class="contact-item">
+                <img src="assets/footer-mail.svg" alt="" />
+                <a href="mailto:info@sydneyspeechclinic.com.au"
+                  >info@sydneyspeechclinic.com.au</a
+                >
+              </li>
+              <li class="contact-item">
+                <img src="assets/footer-call.svg" alt="" />
+                <a href="tel:0284040715">Phone: 02 8404 0715</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom-bar">
+          <p>Copyright 2020 (C) Sydney Speech Clinic</p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms & Conditions</a>
+          </div>
+          <div class="social-icons social-icons-desktop">
+            <a href="#">
+              <img src="assets/footer-twitter.svg" alt="twitter" />
+            </a>
+            <a href="#">
+              <img src="assets/footer-insta.svg" alt="insta" />
+            </a>
+            <a href="#">
+              <img src="assets/footer-fb.svg" alt="fb" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
